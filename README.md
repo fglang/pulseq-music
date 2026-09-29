@@ -2,6 +2,8 @@
 
 **Turn music into a 3D radial MRI pulse sequence.** This code translates an audio waveform to the scanner's gradient axes, forming a 3D koosh-ball k-space trajectory. The generated Pulseq sequence can be animated including audio playback.
 
+https://github.com/user-attachments/assets/a22f5bdf-5237-4a07-b004-a2dfb3d4347b
+
 ## What it does
 
 1. Resample and filter the input audio. Arrange it into gradient blocks with gaps for RF excitation.
