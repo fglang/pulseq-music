@@ -51,7 +51,7 @@ The code suppresses selected frequency bands, but this does **not** constitute a
 The audio waveform is optimized to suppress forbidden frequency bands *before* it is converted into gradient blocks. Let $y$ be the original audio and $Sx$ the waveform produced from optimized audio $x$ by applying the periodic envelope and inserting zero-gradient RF gaps. The optimization objective is
 
 $$
-\min_x \ \frac12\|x-y\|^2+\frac{\lambda}{2}\|M_BFSx\|^2,
+\min_x \ \frac12\lVert x-y\rVert^2+\frac{\lambda}{2}\lVert M_BFSx\rVert^2,
 $$
 
 where $F$ is the Fourier transform and $M_B$ selects the forbidden frequency bands. Thus, the optimization preserves the audio while reducing forbidden-band power after the envelope and gaps have been applied. Setting the gradient to zero gives
